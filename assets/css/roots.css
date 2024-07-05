@@ -1,10 +1,48 @@
 :root{
 
-    /*----------------------------font-size--------------*/
-    --fs-18:18px;
-    --fs-36:36px;
-    /*----------------------------font-weight-------------*/
+    /*--------------------------------------font-size--------------*/
+    --fs-xl:36px;
+    --fs-lg:18px;
+    --fs-md:14px;
+    --fs-sm:12px;
 
-    --fw-700:700;
-    --fw-400:400;
+    /*-------------------------------------font-weight-------------*/
+    --fw-lg:700;
+    --fw-md:600;
+    --fw-sm:400;
+}
+
+/*-------------------------------------------roots------------------*/
+
+.NFTsee{
+    font-size:var(--fs-xl);
+    font-weight:var(--fw-lg);
+}
+.font-400-18{
+    font-size:var(--fs-lg);
+    font-weight:var(--fw-sm);
+}
+.font-400-12{
+    font-size:var(--fs-sm);
+    font-weight:var(--fw-sm);
+}
+
+.most-btn:hover {
+    font-size:var(--fs-sm);
+    font-weight:var(--fw-md);
+}
+
+/*---------------------------------responsive-media-screen---------*/
+
+@media (max-width:512px) {
+    :root{
+        --fs-xl:18px;
+        --fs-lg:12px;
+    }
+}
+@media (max-width:768px) {
+    :root{
+        --fs-xl:27px;
+        --fs-lg:14px;
+    }
 }
